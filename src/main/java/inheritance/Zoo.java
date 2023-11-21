@@ -8,8 +8,11 @@ public class Zoo {
 
         Animal sasha = new Dog();
 //        sasha.makeSounds();
+        Dog sashaTheDog = (Dog) sasha;
+        sashaTheDog.fetch();
 
         sasha = new Cat();
         sasha.makeSounds();
+        ((Cat)sasha).scratch();
     }
 }
